@@ -1,5 +1,17 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let array = word.split("")
+  let newWord = ''
+  for (let n = (array.length) - 1; n >= 0; n--) {
+    newWord += array[n]
+  }
+  if (newWord === word) {
+    return true
+  }
+  else {
+    return false
+  }
+
 }
 
 /* 
